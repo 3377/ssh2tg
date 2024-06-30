@@ -1,0 +1,2 @@
+curl -s -o /etc/profile.d/ssh2tg.sh https://raw.githubusercontent.com/3377/ssh2tg/main/ssh2tg.sh && chmod +x /etc/profile.d/ssh2tg.sh
+更改token和id
