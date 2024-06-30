@@ -14,8 +14,8 @@ if ! command -v jq &> /dev/null; then
     fi
 fi
 # Telegram Bot相关信息
-TELEGRAM_BOT_TOKEN=$1
-CHAT_ID=$2
+TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
+CHAT_ID=$CHAT_ID
 
 # 获取登录信息
 IP=$(echo $SSH_CONNECTION | awk '{print $1}')
