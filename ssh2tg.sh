@@ -29,9 +29,9 @@ TIME=$(date +"%Y年%m月%d日 %H:%M:%S")
 # 发送Telegram消息
 MESSAGE="ℹ️ 登录信息：
 登录机器：$HOSTNAME
-登录名：$USERNAME"
+登录名：$USERNAME
 登录IP：$IP            
 登录时间：$TIME
-登录地区：$LOCATION
+登录地区：$LOCATION"
 
 curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID&text=$MESSAGE"
