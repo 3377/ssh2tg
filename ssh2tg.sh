@@ -36,8 +36,8 @@ echo $count > $count_file
 
 
 # Telegram Bot相关信息
-TELEGRAM_BOT_TOKEN=6706685225:AAE5hItORogg-5G_NBC7bg7T7X7FDaHJOyU
-CHAT_ID=5147678880
+TELEGRAM_BOT_TOKEN=replacetoken
+CHAT_ID=replaceid
 
 # 获取登录信息
 IP=$(echo $SSH_CONNECTION | awk '{print $1}')
