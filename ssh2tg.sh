@@ -34,4 +34,7 @@ MESSAGE="ℹ️ 登录信息：
 登录时间：$TIME
 登录地区：$LOCATION"
 
-curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID&text=$MESSAGE" >> /root/nohupssh2tg.out 2>&1 &
+curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID&text=$MESSAGE" >> /root/nohupssh2tg.out 2>&1 & disown
+echo "您此台机器最后5次的登录记录如下！"
+cat /root/nohupssh2tg.out |jq '.result.text'|tail -5|sort -r|tr -d 'n''"'|sed 's/\\//g'|nl -w 2 -s '、'
+
