@@ -1,7 +1,4 @@
-#效果图
-[![image.png](https://img.imgdd.com/f210f3.a0543e59-8d1d-4d23-82d5-d16270f6f696.png)](https://img.imgdd.com/f210f3.a0543e59-8d1d-4d23-82d5-d16270f6f696.png)
 
-#登录机器执行命令
+# 登录机器执行命令
 curl -s -o /etc/profile.d/ssh2tg.sh https://raw.githubusercontent.com/3377/ssh2tg/main/ssh2tg.sh && chmod +x /etc/profile.d/ssh2tg.sh && sed -i 's/replacetoken/替换为你的tg机器人token/g;s/replaceid/替换为你的tg用户ID/g' /etc/profile.d/ssh2tg.sh
 
-![描述](https://img.imgdd.com/f210f3.a0543e59-8d1d-4d23-82d5-d16270f6f696.png)
